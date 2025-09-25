@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>previsao do tempo</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <div class="principal">
+        <div class="caixa-maior">
+            <h1 class="titulo">previsao do tempo</h1>
+            <input class="input-cidade" type="text" placeholder="digite a cidade">
+
+            <button onclick="clique()" class="bnt-pesquisar">pesquisar</button>
+
+            <div class="menor">
+                <h2 class="cidade">Tempo em <span class="nome">---</span></h2>
+                <p class="tempo"><span class="tempo">--- </span>°C</p>
+                <img id="icon" src="./OIP.webp">
+                <p class="texto"> Descrição:<span class="descricao"> ---</span></p>
+                <p  class="texto">Umidade:<span class="umidade"> ----</span></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
