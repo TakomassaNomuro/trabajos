@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Conversor de temperatura</title>
+</head>
+
+<body>
+    <div class="conteiner">
+        <h1>Conversor de Temp.</h1>
+
+
+        <label class="label-fococ">Celcius</label>
+        <input class="input-fococ" type="text" id="celsius" placeholder="Digite a temperatura em Celsius"><br>
+        <label >Temperaturas comuns</label>
+        <select class="selects" onchange="fazTudo(this, 'celsius', 'fahrenheit', 'kelvin')" id="tcomumc">
+            <option value="0">
+                0°c
+            </option>
+            <option value="30">
+                30°c
+            </option>
+            <option value="100">
+                100°c
+            </option>
+        </select><br><br>
+
+
+        <label class="label-focof">Fahrenheit</label>
+        <input class="input-focof" type="text" id="fahrenheit" placeholder="Digite a temperatura em Fahrenheit"><br>
+        <label>Temperaturas comuns</label>
+        <select class="selects" onchange="fazTudo(this, 'celsius', 'fahrenheit', 'kelvin')" id="tcomumf">
+            <option value="32">
+                32°F
+            </option>
+            <option value="86">
+                86°F
+            </option>
+            <option value="212">
+                212°F
+            </option>
+        </select><br><br>
+        
+
+        <label class="label-focok">Kelvin</label>
+        <input class="input-focok" type="text" id="kelvin" placeholder="Digite a temperatura em Kelvin"><br>
+        <label>Temperaturas comuns</label>
+        <select class="selects" onchange="fazTudo(this, 'celsius', 'fahrenheit', 'kelvin')" id="tcomumk">
+            <option value="274.15">
+                274.15K
+            </option>
+            <option value="303.15">
+                303.15K
+            </option>
+            <option value="373.15">
+                373.15K
+            </option>
+        </select><br><br>
+    </div>
+    
+</body>
+
+</html>
